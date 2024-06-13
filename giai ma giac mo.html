@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html class="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <title>Giải mã giấc mơ</title>
+    <link
+      rel="icon"
+      href="./assets/images/88wanwin logo 300x130.ico"
+      sizes="192x192"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="assets/jquery-3.7.1.min.js"></script>
+    <script src="assets/tailwind.js"></script>
+    <link rel="stylesheet" href="./assets/index.css" />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+
+    <div id="showloading"  class="h-screen w-full left-0 bg-[#adadadbe] top-0 fixed duration-1000 z-50" >
+        <div class="space-x-2 justify-center flex items-center mt-[20%]">
+          <div
+            class="h-8 w-8 bg-black rounded-full animate-bounce [animation-delay:0s]"
+          ></div>
+          <div
+            class="h-8 w-8 bg-black rounded-full animate-bounce [animation-delay:-0.3s]"
+          ></div>
+          <div class="h-8 w-8 bg-black rounded-full animate-bounce"></div>
+        </div>
+    </div>
+    <header class="shadow-lg" id="header"></header>
+
+
+<main>
+    <div class="bg-[#f5f5f5cf]">
+        <div class="container max-w-screen-lg mx-auto *:mb-5 *:lg:mb-10 mt-5 lg:mt-10">
+            <h3 class="text-3xl font-bold text-[#135790] text-center">LƯU TRỮ DANH MỤC: GIẢI MÃ GIẤC MƠ</h3>
+            <p class="text-center">Giải mã giấc mơ lô đề – Sổ mơ mơ đề tại nhà cái <b class="text-[#135790]">88wan</b> được cập nhật chính xác tương ứng với giấc mơ của bạn đang mơ để đưa ra những con số gợi ý có tỉ lệ chính xác cao. Tham khảo tại các bài viết dưới đây</p>
+            <div class="grid grid-cols-12 gap-5 lg:gap-10">
+                <div class="col-span-12 md:col-span-9 *:mb-5 *:lg:mb-10 main_left"></div>
+                <div class="col-span-12 md:col-span-3 main_right"></div>
+            </div>
+        
+        </div>
+    </div>
+</main>
+
+
+
+
+
+
+
+
+    <footer class="bg-black mt-5 lg:mt-20 footer"> </footer>
+    <div id="backtotop"></div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.js"></script>
+    <script src="./assets/javascript.js"></script>
+    <script>
+      var active = "CASINO";
+
+      const items_main_left = [
+        {
+
+            id: 33,
+            img: "Artboard 11.png",
+            h4: "Nằm mơ thấy hôn người lạ, đánh lô đề nào là chuẩn xác nhất?",
+            p: "Hôn nhau là một hành động lãng mạn và ngọt ngào của những cặp đôi..."
+        },
+        {
+            id: 34,
+            img: "Artboard 9.png",
+            h4: "Giải mã giấc mơ đầu 1 câm – Đầu 1 câm đánh con gì?",
+            p: "Trong làng lô đề thì phương pháp đánh đề theo đầu 1 câm đã được..."
+        },
+        {
+            id: 35,
+            img: "Artboard 7.png",
+            h4: "Mơ thấy quần áo là điềm gì- Đánh đề con gì để trúng lớn?",
+            p: "Nếu bạn mơ thấy quần áo, chắc hẳn bạn đang rất tò mò và thắc..."
+        },
+        {
+            id: 36,
+            img: "Artboard 5.png",
+            h4: "mơ thấy tiền đô liệu có may mắn – tiền đô đánh con gì dễ trúng",
+            p: "Hình ảnh đồng tiền đô la xuất hiện khá quen thuộc trong đời sống hàng..."
+        },
+        {
+            id: 37,
+            img: "Artboard 3.png",
+            h4: "Mơ thấy máy bay rơi là điềm gì ? Đánh con gì thắng đậm?",
+            p: "Khi bạn nằm mơ thấy máy bay rơi hay máy bay đang bay mà bốc..."
+        },
+        {
+            id: 38,
+            img: "Artboard 1.png",
+            h4: "Mơ thấy bơi trong nước có ý nghĩa gì ? Đánh con gì thắng đậm",
+            p: "Mỗi giấc mơ xảy ra có thể là vô thức nhưng cũng có thể là..."
+        },
+      ];
+    $.each(items_main_left, function(index, item){
+        var item_main_left = `
+        <div class="grid grid-cols-12 gap-5">
+                            <div class="col-span-5">
+                                <img class="cursor-pointer" src="./assets/images/${item.img}" alt="" onclick="detail(${item.id})">
+                            </div>
+                            <div class="col-span-7 py-5 *:mb-5">
+                                <h4 class="text-[1.8rem] font-bold text-[#135790] hover:text-gray-900"><a href="">${item.h4}</a></h4>
+                                <hr class="w-[30px] border-t-[3px] border-gray-400">
+                                <p class="cursor-pointer" onclick="detail(${item.id})">${item.p}</p>
+                            </div>
+                        </div>
+        `;
+        $(".main_left").append(item_main_left);
+    });
+
+    </script>
+  </body>

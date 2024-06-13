@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html class="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <title>88wan | 88wan Casino </title>
+    <link
+      rel="icon"
+      href="./assets/images/88wanwin logo 300x130.ico"
+      sizes="192x192"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="assets/jquery-3.7.1.min.js"></script>
+    <script src="assets/tailwind.js"></script>
+    <link rel="stylesheet" href="./assets/index.css" />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+
+    <div id="showloading"  class="h-screen w-full left-0 bg-[#adadadbe] top-0 fixed duration-1000 z-50" >
+        <div class="space-x-2 justify-center flex items-center mt-[20%]">
+          <div
+            class="h-8 w-8 bg-black rounded-full animate-bounce [animation-delay:0s]"
+          ></div>
+          <div
+            class="h-8 w-8 bg-black rounded-full animate-bounce [animation-delay:-0.3s]"
+          ></div>
+          <div class="h-8 w-8 bg-black rounded-full animate-bounce"></div>
+        </div>
+    </div>
+    <header class="shadow-lg" id="header"></header>
+
+
+<main>
+    <div class="bg-[#f5f5f5cf]">
+        <div class="container max-w-screen-lg mx-auto *:mb-5 *:lg:mb-10 mt-5 lg:mt-10">
+            <h3 class="text-3xl font-bold text-[#135790] text-center">LƯU TRỮ DANH MỤC: 88WAN</h3>
+            <p class="text-center">Các bài viết hướng dẫn các trò chơi Casino tại nhà cái <b class="text-[#135790]">88WAN</b> mới nhất. Cập nhật những tính năng và thông tin mới nhất dành cho hội viên của nhà cái 88WAN</p>
+            <div class="grid grid-cols-12 gap-5 lg:gap-10">
+                <div class="col-span-12 md:col-span-9 *:mb-5 *:lg:mb-10 main_left"></div>
+                <div class="col-span-12 md:col-span-3 main_right"></div>
+            </div>
+        
+        </div>
+    </div>
+</main>
+
+
+
+
+
+
+
+
+    <footer class="bg-black mt-5 lg:mt-20 footer"> </footer>
+    <div id="backtotop"></div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.js"></script>
+    <script src="./assets/javascript.js"></script>
+    <script>
+      var active = "88WAN";
+
+      const items_main_left = [
+        {
+            id: 1,
+            img: "Artboard 48.png",
+            h4: "Top 5 nhà cái mới đáng để chơi trong năm 2022",
+            p: "Thị trường cá cược trực tuyến tại Việt Nam hiện nay đang cực kỳ sôi..."
+        },
+        {
+            id: 2,
+            img: "photo_2024-06-13_08-52-31.jpg",
+            h4: "88WAN là gì? Có uy tín không? Có nên chơi cá cược tại 88WAN không?",
+            p: "Người chơi đam mê cá cược trực tuyến rất hoang mang khi ngày càng có..."
+        },
+        {
+            id: 3,
+            img: "tien-hoan-tra-la-gi-2-300x200.jpg",
+            h4: "Tiền Hoàn Trả Là Gì? Tại Sao Tỷ Lệ Hoàn Tiền Tại 88WAN Là Cao Nhất?",
+            p: "Tiền hoàn trả là gì? Nếu là một người chơi cá cược trực tuyến lâu..."
+        },
+        { 
+            id: 4,
+            img: "Artboard 26.png",
+            h4: "Đăng nhập 88WAN Link nhà cái 88WAN không bị chặn",
+            p: "Đăng nhập 88WAN không quá khó khăn. Anh em chỉ cần có cho mình một..."
+        },
+        {
+            id: 5,
+            img: "Artboard 40.png",
+            h4: "Hướng dẫn cách nạp tiền 88WAN chi tiết, nhanh chóng",
+            p: "Các hình thức nạp tiền 88WAN khá đa dạng để anh em lựa chọn. Nhà..."
+        },
+        { 
+            id: 6,
+            img: "Artboard 32.png",
+            h4: "Liên hệ hỗ trợ nhà cái 88WAN – Bộ phận CSKH – Hòm thư khiếu nại",
+            p: "88WAN là nhà cái cá cược trực tuyến hàng đầu thị trường hiện nay. Tham..."
+        },
+        {
+            id: 7,
+            img: "Artboard 52.png",
+            h4: "Tải 88WAN – Hướng dẫn tải app 88WAN cho điện thoại Android/Apk/ios",
+            p: "Hiện tại nhà cái 88WAN đang là địa chỉ được thị trường đánh giá cao..."
+        },
+        {
+            id: 8,
+            img: "Artboard 25.png",
+            h4: "Tìm hiểu về chính sách bảo mật nhà cái 88WAN",
+            p: "Chính sách bảo mật nhà cái 88WAN là vấn đề mà nhiều anh em cần..."
+        },
+      ];
+    $.each(items_main_left, function(index, item){
+        var item_main_left = `
+        <div class="grid grid-cols-12 gap-5">
+                            <div class="col-span-5" onclick="detail(${item.id})"> 
+                                  <img class="cursor-pointer" src="./assets/images/${item.img}" alt="">
+                       
+                            </div>
+                            <div class="col-span-7 py-5 *:mb-5">
+                                <h4 class="text-[1.8rem] font-bold text-[#135790] hover:text-gray-900"><a >${item.h4}</a></h4>
+                                <hr class="w-[30px] border-t-[3px] border-gray-400">
+                                <p class="cursor-pointer" onclick="detail(${item.id})">${item.p}</p>
+                            </div>
+                        </div>
+        `;
+        $(".main_left").append(item_main_left);
+    });
+
+    
+  
+
+    </script>
+  </body>

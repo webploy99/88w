@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html class="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <title>Khuyến mãi  </title>
+    <link
+      rel="icon"
+      href="./assets/images/88wanwin logo 300x130.ico"
+      sizes="192x192"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="assets/jquery-3.7.1.min.js"></script>
+    <script src="assets/tailwind.js"></script>
+    <link rel="stylesheet" href="./assets/index.css" />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+
+    <div id="showloading"  class="h-screen w-full left-0 bg-[#adadadbe] top-0 fixed duration-1000 z-50" >
+        <div class="space-x-2 justify-center flex items-center mt-[20%]">
+          <div
+            class="h-8 w-8 bg-black rounded-full animate-bounce [animation-delay:0s]"
+          ></div>
+          <div
+            class="h-8 w-8 bg-black rounded-full animate-bounce [animation-delay:-0.3s]"
+          ></div>
+          <div class="h-8 w-8 bg-black rounded-full animate-bounce"></div>
+        </div>
+    </div>
+    <header class="shadow-lg" id="header"></header>
+
+
+<main>
+    <div class="bg-[#f5f5f5cf]">
+        <div class="container max-w-screen-lg mx-auto *:mb-5 *:lg:mb-10 pt-5 lg:pt-10">
+            <h3 class="text-3xl font-bold text-[#135790] text-center">LƯU TRỮ DANH MỤC: KHUYẾN MÃI</h3>
+            <p class="text-center">Khuyến mãi nhà cái – Nhà cái tặng tiền cược miễn phí khi đăng ký 2022. <b class="text-[#135790] ">88wan</b> là nhà cái cung cấp các trò chơi slot game, casino tặng tiền cược free dành cho anh em trải nghiệm</p>
+            <div class="grid grid-cols-12 gap-5 lg:gap-10">
+                <div class="col-span-12 md:col-span-9 *:mb-5 *:lg:mb-10 main_left"></div>
+                <div class="col-span-12 md:col-span-3 main_right"></div>
+            </div>
+        
+        </div>
+    </div>
+</main>
+
+
+
+
+
+
+
+
+    <footer class="bg-black mt-5 lg:mt-20 footer"> </footer>
+    <div id="backtotop"></div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.js"></script>
+    <script src="./assets/javascript.js"></script>
+    <script>
+      var active = "CASINO";
+
+      const items_main_left = [
+        {
+            id: 29,
+            img: "Artboard-49.png",
+            h4: "88WAN – nhà cái tặng tiền trải nghiệm 2020 siêu chất",
+            p: "Nhà cái tặng tiền trải nghiệm mang tên 88WAN đang được nhiều game thủ săn..."
+        },
+        {
+            id: 30,
+            img: "photo_2024-06-13_09-39-10.jpg",
+            h4: "Tham gia game slot tặng tiền khi đăng ký tại nhà cái uy tín 88WAN",
+            p: "Game slot tặng tiền khi đăng ký là một trong những sảnh game hấp dẫn..."
+        },
+        {
+            id: 31,
+            img: "Artboard 19.png",
+            h4: "Baccarat trực tuyến cược đôi nhận thưởng 22888k tại 88WAN",
+            p: "Baccarat trực tuyến cược đôi nhận thưởng 22888k tại nhà cái 88WAN đang cực kỳ..."
+        },
+        {
+            id: 32,
+            img: "Artboard 45.png",
+            h4: "Nhà cái tặng tiền trải nghiệm – 88WAN tặng 100k miễn phí",
+            p: "Hiện nay các nhà cái luôn có chính sách tặng tiền cược miễn phí, tặng..."
+        },
+        
+      ];
+    $.each(items_main_left, function(index, item){
+        var item_main_left = `
+        <div class="grid grid-cols-12 gap-5">
+                            <div class="col-span-5">
+                                <img class="cursor-pointer" src="./assets/images/${item.img}" alt="" onclick="detail(${item.id})">
+                            </div>
+                            <div class="col-span-7 py-5 *:mb-5">
+                                <h4 class="text-[1.8rem] font-bold text-[#135790] hover:text-gray-900"><a href="">${item.h4}</a></h4>
+                                <hr class="w-[30px] border-t-[3px] border-gray-400">
+                                <p class="cursor-pointer" onclick="detail(${item.id})">${item.p}</p>
+                            </div>
+                        </div>
+        `;
+        $(".main_left").append(item_main_left);
+    });
+
+    </script>
+  </body>
